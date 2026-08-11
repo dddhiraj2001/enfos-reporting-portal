@@ -1,0 +1,39 @@
+# Operating system and editor metadata
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local environment configuration. Commit placeholder examples only.
+.env
+.env.*
+!.env.example
+!**/.env.example
+*.local
+
+# Logs, test output, and runtime diagnostics
+*.log
+logs/
+coverage/
+frontend/coverage/
+*.hprof
+hs_err_pid*
+
+# Private keys and certificate stores must never enter source control.
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+
+# Generated dependencies and build artifacts
+backend/target/
+frontend/dist/
+frontend/node_modules/
+
+# Internal working notes are not part of the application source tree.
+PLAN.md
+STEERING.md
+docs/ENGINEERING_NOTES.md
