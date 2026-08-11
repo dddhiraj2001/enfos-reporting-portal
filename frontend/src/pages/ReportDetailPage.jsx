@@ -116,7 +116,9 @@ export default function ReportDetailPage() {
           <p>{config.description}</p>
         </div>
         {status === 'success' && (
-          <span className="row-count">{reportPage.totalItems} rows</span>
+          <span className="row-count">
+            {reportPage.totalItems} {reportPage.totalItems === 1 ? 'row' : 'rows'}
+          </span>
         )}
       </div>
 

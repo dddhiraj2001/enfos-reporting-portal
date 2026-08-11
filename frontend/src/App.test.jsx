@@ -111,6 +111,7 @@ describe('reporting portal', () => {
       expect(within(table).getAllByRole('row')).toHaveLength(2)
     })
     expect(within(table).getByText('Daniel Kim')).toBeVisible()
+    expect(screen.getByText('1 row')).toBeVisible()
 
     await user.clear(search)
     await screen.findByText('Ava Patel')
