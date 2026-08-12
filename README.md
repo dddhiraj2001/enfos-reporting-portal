@@ -105,7 +105,6 @@ Browser → React page → async hook → API client → /api proxy
 │   │   └── utils/             # Display formatting
 │   ├── package.json
 │   └── vite.config.js
-├── docs/                       # Manual browser verification
 ├── scripts/start.mjs           # Full-stack launcher
 ├── package.json                # Root command
 └── README.md
@@ -196,8 +195,7 @@ npm --prefix frontend run test:contract
 ```
 
 The contract command checks report IDs and fields; it does not start the backend or automate a
-browser. See [docs/MANUAL_VERIFICATION.md](docs/MANUAL_VERIFICATION.md) for the real-browser
-journey.
+browser.
 
 ## Configuration
 
@@ -229,10 +227,6 @@ This application ships with synthetic, non-sensitive seed data and read-only end
 Authentication, authorization, TLS termination, rate limiting, and production security headers
 belong at the application and deployment boundaries before the service handles real
 organizational data.
-
-## Documentation
-
-- [Manual verification](docs/MANUAL_VERIFICATION.md): reproducible browser test journey
 
 ## Troubleshooting
 
